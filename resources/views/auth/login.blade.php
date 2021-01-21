@@ -33,10 +33,10 @@
 
                 <div class="card-title">Inicio de sesion</div>
                 <div class="form-group style2">
-                    <label class="form-label">Identificacion</label>
-                    <input type="number" class="form-control @error('identificacion') is-invalid @enderror" required name="identificacion" placeholder="Ingrese su identificacion" autofocus>
+                    <label class="form-label">Email</label>
+                    <input type="text" class="form-control @error('email') is-invalid @enderror" required name="email" placeholder="Ingrese su email" autofocus>
 
-                    @error('identificacion')
+                    @error('email')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>

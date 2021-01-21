@@ -25,19 +25,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-left">{{ __('Identificacion') }}</label>
-
-                            <div class="col-md-6 col-lg-12">
-                                <input id="name" type="text" class="form-control @error('identificacion') is-invalid @enderror" name="identificacion" value="{{ old('identificacion') }}" required autocomplete="name" autofocus>
-
-                                @error('Identificacion')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
+                        
 
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-left">{{ __('E-Mail Address') }}</label>
