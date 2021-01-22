@@ -86,7 +86,7 @@ class EquiposController extends Controller
     }
 
     public function busqueda(Request $request, $id){
-        $equipos = Equipo::with("referencias")->where('equipos.referencias_id','=', $id)->whereHas('referencias', function(Builder $query) use ($request) {
+        $equipos = Equipo::with("referencias")->where('equipos.categorias_id','=', $id)->whereHas('referencias', function(Builder $query) use ($request) {
             $query->where('Referencia','like', '%' . $request->get('equipo') . '%')
             ->orwhere('Marca','like', '%' . $request->get('equipo') . '%');
         })->paginate(5);

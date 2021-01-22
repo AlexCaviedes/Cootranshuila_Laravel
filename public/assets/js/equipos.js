@@ -4,7 +4,7 @@ $(document).ready(function(){
   var maxField = 20; //Input fields increment limitation
   var addButton = $('.add_button'); //Add button selector
   var wrapper = $('.field_wrapper'); //Input field wrapper 
-  var fieldHTML = '<div id="este" class="input-group"><input type="text" class="form-control mb-2 col-md-11" name="cantidades[]" value="" placeholder="Ficha Tecnica" required min="1" maxlength="20"/><a href="javascript:void(0);" class="remove_button form-group col-1" title="Eliminar casilla"><i class="fa fa-minus" aria-hidden="true"></i></a></div>';  
+  var fieldHTML = '<div id="este" class="input-group"><input type="text" class="form-control mb-2 col-md-11" name="cantidades[]" value="" placeholder="Ficha Tecnica" required min="1" maxlength="533"/><a href="javascript:void(0);" class="remove_button form-group col-1" title="Eliminar casilla"><i class="fa fa-minus" aria-hidden="true"></i></a></div>';  
   var x = 1; //Initial field counter is 1
   $(addButton).click(function(){ //Once add button is clicked
       if(x < maxField){ //Check maximum number of input fields

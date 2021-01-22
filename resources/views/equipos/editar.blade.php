@@ -40,7 +40,7 @@
                             </div>
                             <div class="form-group col-3">
                                 <label for="nombre" class="control-label">Ubicación</label>
-                                <input id="id_ubi"  type="text" name="ubicacion" placeholder="Ubicación" class="form-control mb-2" value="{{ $equipos->Ubicacion }}" required min="1" maxlength="19"/>
+                                <input id="id_ubi"  type="text" name="ubicacion" placeholder="Ubicación" class="form-control mb-2" value="{{ $equipos->Ubicacion }}" required min="1" maxlength="29"/>
                             </div>
                             @foreach($json as $total)
                             <div class="form-group col-3">

@@ -32,7 +32,7 @@
                   <div class="row">
                      <div class="form-group col-3">
                         <select   name="categoria"  class="form-control " id="categoria" required>
-                           <option value="">Seleccione</option>
+                           <option value="">Categoria</option>
                            @foreach($categorias as $categoria)
                               <option value={{$categoria->id}} name="" >{{$categoria->Categoria}}</option>
                            @endforeach
@@ -52,13 +52,13 @@
                      </div>
                      <div class="form-group col-3">
                         <select   name="estado"  class="form-control " id="estado" required>
-                           <option value="">Seleccione</option>
+                           <option value="">Estado</option>
                            <option  value="activo" name="activo" id="activo">Activo</option>
                            <option  value="Inactivo" name="Inactivo" id="Inactivo">Inactivo</option>
                         </select>
                      </div>
                      <div class="form-group col-3">
-                        <input   type="text" name="ubicacion" placeholder="Ubicación" class="form-control mb-2" id="ubicacion" required min="1" maxlength="19"/>
+                        <input   type="text" name="ubicacion" placeholder="Ubicación" class="form-control mb-2" id="ubicacion" required min="1" maxlength="29"/>
                      </div>
                   </div>
                   <div class="field_wrapper row">

@@ -19,9 +19,12 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <a href="{{ url('/equipos') }}" class="btn btn-primary btn-sm">Volver a menú principal</a>
+                    <a href="{{ url('/equipos') }}" class="btn btn-primary btn-sm">
+                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                        Volver a menú principal
+                    </a>
                     @foreach ($equipos as $equipo)
-                        <form class="pull-right " method="GET" action="{{route('busqueda',$equipo->id)}}" >
+                        <form class="pull-right " method="GET" action="{{route('busqueda',$equipo->categorias->id)}}" >
                     @endforeach
                             <div class="input-icon">
                                 <span class="input-icon-addon">
