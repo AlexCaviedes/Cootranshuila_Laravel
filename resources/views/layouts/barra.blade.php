@@ -13,7 +13,7 @@
         <div class="hright">
             <div class="dropdown">
                 {{--<a href="javascript:void(0)" class="nav-link icon settingbar"><i class="fa fa-bell"></i></a>--}}
-                {{--<a href="javascript:void(0)" class="nav-link icon menu_toggle"><i class="fa fa-navicon"></i></a>--}}
+                <a href="javascript:void(0)" class="nav-link icon menu_toggle"><i class="fa fa-navicon"></i></a>
             </div>            
         </div>
     </div>
