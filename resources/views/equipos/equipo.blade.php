@@ -74,8 +74,9 @@
                             @endforeach
                             </tbody>
                         </table>
+                        
                     </div>
-                    {{$equipos->links()}}   
+                    {{ $equipos->links('vendor.pagination.bootstrap-4')}} 
                 </div>
             </div>
         </div>

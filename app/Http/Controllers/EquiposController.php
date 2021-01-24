@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Storage;
-use SimpleSoftwareIO\QrCode\Facades\QrCode;
+//use LaravelQRCode\Facades\QRCode;
+//use SimpleSoftwareIO\QrCode\Facades\QrCode;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Db;
@@ -196,13 +197,9 @@ class EquiposController extends Controller
         $eliminarReferencia = Referencia::find($eliminarEquipo->referencias_id);
         $eliminarReferencia->delete();
 
-        if ($eliminarReferencia->Delete()){
-            return back()->with('mensaje', 'Datos eliminados');
-        }
-        else
-        {
-            return back()->with('mensaje', 'Datos nos eliminados');
-        }
+       
+        return back()->with('mensaje', 'Datos eliminados');
+        
     }
 
     public function ver_qr(Request $request, $categoria,$id){

@@ -29,6 +29,10 @@ function confirmarEliminar() {
         }
 }
 
+function mensaje(){
+  alert("Fuera de servicio");
+}
+
 
 (function confirmarModificar() {
     var form = document.getElementById('modificar');

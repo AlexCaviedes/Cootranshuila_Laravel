@@ -4,10 +4,10 @@
         <h3 class="brand-name"><b>Cootranshuila</b></h3>
     </div>
         <div class="input-icon">
-            <span class="input-icon-addon">
+            {{--<span class="input-icon-addon">
                 <i class="fe fe-search"></i>
             </span>
-            <input type="text" class="form-control" placeholder="Buscar...">
+            <input type="text" class="form-control" placeholder="Buscar...">--}}
         </div>
     <div class="tab-content">
         <div class="tab-pane fade active show" id="all-tab">

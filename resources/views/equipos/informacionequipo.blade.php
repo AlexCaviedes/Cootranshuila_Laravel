@@ -98,7 +98,7 @@
                         @endforeach
                         </table>
                     </div>
-                    {{ $observaciones->links() }}
+                    {{ $observaciones->links('vendor.pagination.bootstrap-4') }}
                 {{-- fin card body --}}
                 </div>
             </div>
